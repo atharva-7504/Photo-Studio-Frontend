@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+.main_box {
+    background-image: url("./photo.jpg");
+    height:100vh;
+    background-size: cover;
+}
+.btn_one {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    position:absolute;
+    left:15px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.sidebar_menu {
+    position:fixed;
+    left:-400px;
+    height:100vh;
+    width: 25%;
+    background-color:rgba(255,255,255,0.15);
+    box-shadow: 1px 1px 4px rgba(255,255,255,0.5); 
+}
+.sidebar_menu .logo {
+    width:100%;
+    line-height: 60px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5); 
+}
+.sidebar_menu .logo a{
+    cursor: pointer;
+    position:absolute;
+    left:80px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    color:white;
+}
+.menu {
+    margin-top:80px;
+}
+.sidebar_menu .btn_two {
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position:absolute;
+    left:300px;
+    opacity: 1.0;
+    cursor: pro;
+}
+.sidebar_menu .menu li {
+    margin-top: 10px;
+    padding:10px 20px; 
+}
+#check {
+    display: none;
+}
+.sidebar_menu .menu i,a {
+    color:#fff;
+    text-decoration: none;font-size: 18px;
+}
+.sidebar_menu.menu i {
+    padding-right: 100px;
+}
+.sidebar_menu .social_media ul i {
+    opacity: 0.4;
+    color: #fff;
+    margin-top: 80px;
+    padding: 2px;
+    margin-left: 20px;
+    
+}
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 4px rgb(195, 192, 192);
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn_one i:hover {
+    font-size: 35px;
+}
+.btn_two:hover {
+    font-size:30px;
+}
+.sidebar_menu .social_media i:hover {
+    opacity:1;
+    transform: scale(1.2);
+}
+#check:checked ~ .sidebar_menu {
+    left:0;
+}
